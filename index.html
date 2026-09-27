@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INTERACTIVE WEB GIS OF PAKISTAN — Basemaps · Cities · Weather Stations · Attributes · Popups · Layer Control · Zoom/Pan</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div class="app">
+ 
+  <aside class="panel">
+    <div class="brand">
+      <span class="brand-mark">⛰</span>
+      <div>
+        <h1>INTERACTIVE WEB GIS OF PAKISTAN</h1>
+        <p class="brand-sub">Lab Assignment No. 1 — Basemaps · GIS Layers · Attributes · Interaction · Design</p>
+      </div>
+    </div>
+ 
+    <section class="block">
+      <h2>Basemaps</h2>
+      <div id="basemap-list" class="stack"></div>
+    </section>
+ 
+    <section class="block">
+      <h2>GIS Layers</h2>
+      <div id="overlay-list" class="stack"></div>
+    </section>
+ 
+    <section class="block">
+      <h2>Legend</h2>
+      <div class="legend-row"><span class="glyph">🏙</span> City marker — Name, Province, Type</div>
+      <div class="legend-row"><span class="glyph">☔</span> Weather station — Station, Temp, Rainfall</div>
+    </section>
+ 
+    <section class="block requirements">
+      <h2>Minimum requirements in this build</h2>
+      <ul>
+        <li>5 basemaps (OSM, Satellite, Terrain, Light, Dark)</li>
+        <li>16 city markers with attributes</li>
+        <li>15 weather station markers with attributes</li>
+        <li>Popups on every marker</li>
+        <li>Layer control (basemaps + on/off overlays)</li>
+        <li>Zoom / pan</li>
+        <li>Custom header, marker symbols, popup design</li>
+      </ul>
+    </section>
+  </aside>
+ 
+  <main class="map-wrap">
+    <div id="map"></div>
+    <div class="scale-note">Drag to pan · Scroll or use +/− to zoom</div>
+  </main>
+ 
+</div>
+ 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+ 
